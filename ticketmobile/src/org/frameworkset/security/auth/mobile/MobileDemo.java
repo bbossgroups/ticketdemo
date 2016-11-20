@@ -53,7 +53,7 @@ public class MobileDemo {
 		String url = "http://localhost:8080/bbossupload/upload/uploaddownFileWithMultipartFile.page";
 		Map<String,File> files = new HashMap<String,File>();
 		Map<String,Object> params = new HashMap<String,Object>();
-		params.put("name", "dudou");
+		params.put("name", "dudou多多");
 		files.put("upload1", new File("E:\\workspace\\bbossgroups\\ticketdemo\\ticketmobile\\src\\org\\frameworkset\\security\\auth\\mobile\\MobileDemo.java"));
 		String result = org.frameworkset.spi.remote.http.HttpReqeust.httpPostforString(url, params,files);
 		 System.out.println("result:"+result);

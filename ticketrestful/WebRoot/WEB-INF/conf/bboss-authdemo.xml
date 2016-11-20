@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!-- 
+	统一认证restful和hessian服务测试用例
+	http://localhost:93/ticketrestful/authdemo/getData.page?authtoken=&queryId=1
+-->
+<properties>
+	  
+    <property name="/authdemo/*.page"  
+		hessian:servicePort="authRestfulDemo"
+		class="org.frameworkset.security.auth.restful.AuthRestfulDemo" />
+</properties>
+
+

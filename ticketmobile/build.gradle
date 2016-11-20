@@ -1,0 +1,45 @@
+sourceSets {
+    main {
+        java {
+            srcDirs 'src'
+        }
+        resources {
+            srcDirs 'resources'
+        }
+        test {
+	        java {
+	            srcDirs 'test'
+	        }
+	         resources {
+					srcDirs 'test' exclude '**/*.java'
+	        }
+        
+    	}
+       
+       
+    }
+}
+ 
+dependencies {
+     compile 'io.jsonwebtoken:jjwt:0.7.0'
+   compile (
+    			[group: 'com.bbossgroups', name: 'bboss-core', version: "${bboss_version}", transitive: true],
+                	
+               [group: 'com.bbossgroups', name: 'bboss-util', version: "${bboss_version}", transitive: false],
+                    [group: 'com.bbossgroups', name: 'bboss-hession', version: "${bboss_version}", transitive: true],
+          [group: 'com.bbossgroups', name: 'bboss-http', version: "${bboss_version}", transitive: true],
+                     
+             [group: 'com.bbossgroups.security', name: 'bboss-security-web-inf', version: "${BBOSS_SECURITY_VERSION}", transitive: false],
+             [group: 'com.bbossgroups.security', name: 'bboss-ticket', version: "${BBOSS_SECURITY_VERSION}", transitive: false],
+               [group: 'log4j', name: 'log4j', version: '1.2.16', transitive: false],
+           
+              )
+     
+     compileOnly (            
+          
+            [group: 'javax.servlet', name: 'javax.servlet-api', version: "3.0.1", transitive: false],
+            //[group: 'javax.servlet', name: 'jsp-api', version: '2.0', transitive: false],
+            [group: 'javax.servlet.jsp', name: 'javax.servlet.jsp-api', version: '2.3.1', transitive: false],
+          
+    	)
+}

@@ -1,0 +1,10 @@
+<!-- 令牌服务配置-->
+<property name="token.TokenService" class="org.frameworkset.web.token.TokenService" 
+		destroy-method="destroy" init-method="afterPropertiesSet">	
+		<property name="tokenserver" value="http://localhost:90/ticketserver"/>			
+		<property name="client" value="true"/>
+		<property name="appid" value="ticketappA"/>
+		<property name="enableToken" value="true"/>
+		<property name="certificate" value="token.certificate"/>
+				
+</property>

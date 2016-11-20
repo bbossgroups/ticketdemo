@@ -1,0 +1,2 @@
+rootProject.name = 'ticketdemo'
+include "ticketserver", "ticketappA","ticketappB","ticketrestful","ticketmobile"

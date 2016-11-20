@@ -1,0 +1,9 @@
+/build/
+/bin/
+/.settings/
+/.classpath
+/.project
+/build.gradle.bak
+/ticketserver.log
+/velocity.log
+/velocity.log.1

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!-- 
+	bboss-mvc全局配置文件
+	描述：配置bboss-mvc的所有controller配置文件
+	     指定这些controller所在的根目录
+-->
+<properties>
+	  
+    <property name="viewResolver" class="org.frameworkset.web.servlet.view.InternalResourceViewResolver" singlable="true">
+        <property name="viewClass" value="org.frameworkset.web.servlet.view.JstlView"/>
+        <property name="prefix" value=""/>
+        <property name="suffix" value=""/>
+    </property>
+
+   
+	 
+ 
+      <property name="httpMessageConverters">
+     	<list>
+
+     		<property class="org.frameworkset.http.converter.json.MappingJacksonHttpMessageConverter"/>
+     		<property class="org.frameworkset.http.converter.StringHttpMessageConverter"/>
+     		
+     	</list>        
+     </property> 
+    
+</properties>
+
+

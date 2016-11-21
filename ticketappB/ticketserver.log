@@ -220,3 +220,43 @@ java.lang.ArrayIndexOutOfBoundsException: 1
 [2016-11-21 18:40:34][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
 [2016-11-21 18:40:47][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
 [2016-11-21 18:40:47][DEBUG][org.frameworkset.web.token.TokenService] 加载认证证书[token.certificate]完毕.
+[2016-11-21 20:12:13][DEBUG][org.frameworkset.spi.assemble.ProviderManagerInfo] class org.frameworkset.spi.interceptor.InterceptorFacttoryImpl not found in classpath,use DummyInterceptorFacttory. 
+[2016-11-21 20:12:13][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 20:12:13][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 20:12:13][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 20:12:13][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 20:12:13][DEBUG][org.frameworkset.web.token.TokenService] 加载认证证书[token.certificate]完毕.
+[2016-11-21 20:12:13][DEBUG][org.frameworkset.security.session.impl.NullSessionListener] createSession session id:5e03231d49434eb4910b7d5623d519f5
+[2016-11-21 20:12:29][DEBUG][org.frameworkset.security.session.impl.NullSessionListener] createSession session id:5f21809de53e4054ba609cae5b14ed94
+[2016-11-21 20:18:42][DEBUG][org.frameworkset.spi.assemble.ProviderManagerInfo] class org.frameworkset.spi.interceptor.InterceptorFacttoryImpl not found in classpath,use DummyInterceptorFacttory. 
+[2016-11-21 20:18:42][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 20:18:42][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 20:18:42][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 21:13:08][DEBUG][org.frameworkset.spi.assemble.ProviderManagerInfo] class org.frameworkset.spi.interceptor.InterceptorFacttoryImpl not found in classpath,use DummyInterceptorFacttory. 
+[2016-11-21 21:13:09][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 21:13:09][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 21:13:09][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 21:13:09][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 21:13:09][DEBUG][org.frameworkset.web.token.TokenService] 加载认证证书[token.certificate]完毕.
+[2016-11-21 21:13:14][DEBUG][org.frameworkset.security.session.impl.NullSessionListener] createSession session id:3ff3606bf6d949028a01be36b3bdddb0
+[2016-11-21 21:13:27][DEBUG][org.frameworkset.security.session.impl.NullSessionListener] createSession session id:4a8ae12f9c474ee3ba6b212e9374db43
+[2016-11-21 21:14:15][DEBUG][org.frameworkset.security.session.impl.NullSessionListener] createSession session id:de820c9cdc394f2285aa8808ae9bd065
+[2016-11-21 21:40:29][DEBUG][org.frameworkset.spi.assemble.ProviderManagerInfo] class org.frameworkset.spi.interceptor.InterceptorFacttoryImpl not found in classpath,use DummyInterceptorFacttory. 
+[2016-11-21 21:40:29][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 21:40:29][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 21:40:29][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 21:40:29][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 21:40:29][DEBUG][org.frameworkset.web.token.TokenService] 加载认证证书[token.certificate]完毕.
+[2016-11-21 21:40:46][DEBUG][org.frameworkset.security.session.impl.NullSessionListener] createSession session id:ebb0c5ee6e464a3d8c42e43f7351bbec
+[2016-11-21 21:43:13][DEBUG][org.frameworkset.security.session.impl.NullSessionListener] createSession session id:5b850fb770074e8b9155ca3ec50ed88a
+[2016-11-21 21:44:24][DEBUG][org.frameworkset.security.session.impl.NullSessionListener] createSession session id:3a1ff3da8806470491f62fbf6ca494b1
+[2016-11-21 21:44:27][DEBUG][org.frameworkset.security.session.impl.NullSessionListener] createSession session id:0cdae666679a4015967053e6e7e8ab4e
+[2016-11-21 21:53:47][DEBUG][org.frameworkset.security.session.impl.NullSessionListener] createSession session id:0814a955f57d404f89150d13d7f5e325
+[2016-11-21 21:58:10][DEBUG][org.frameworkset.security.session.impl.NullSessionListener] createSession session id:7a499381c6344d16b6a24074a83ed040
+[2016-11-21 22:09:33][DEBUG][org.frameworkset.security.session.impl.NullSessionListener] createSession session id:86684ffc7e294172b94b6eaec83dee53
+[2016-11-21 22:20:26][DEBUG][org.frameworkset.spi.assemble.ProviderManagerInfo] class org.frameworkset.spi.interceptor.InterceptorFacttoryImpl not found in classpath,use DummyInterceptorFacttory. 
+[2016-11-21 22:20:26][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 22:20:26][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 22:20:26][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 22:20:26][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 22:20:26][DEBUG][org.frameworkset.web.token.TokenService] 加载认证证书[token.certificate]完毕.

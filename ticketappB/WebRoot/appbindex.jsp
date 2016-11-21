@@ -11,9 +11,11 @@
 <%
 
  
-
-AuthenticatedToken token = (AuthenticatedToken)request.getSession().getAttribute(TicketConsts.ticket_session_token_key);
-String authcode = (String)request.getSession().getAttribute(TicketConsts.ticket_session_authenticatecode_key);	
+HttpSession se = request.getSession(false);
+if(se != null)
+{
+AuthenticatedToken token = (AuthenticatedToken)se.getAttribute(TicketConsts.ticket_session_token_key);
+String authcode = (String)se.getAttribute(TicketConsts.ticket_session_authenticatecode_key);	
 
 		 %>
 		 <span>
@@ -21,7 +23,7 @@ String authcode = (String)request.getSession().getAttribute(TicketConsts.ticket_
 	<span>
 	
 		<a href="appbwork.jsp" target="_appwork"> 访问appbwork</a></span>
-		
+	<%} %>		
 		
 
 

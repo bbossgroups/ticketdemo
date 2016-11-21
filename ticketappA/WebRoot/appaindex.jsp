@@ -10,16 +10,21 @@
 <%@page import="java.util.HashMap"%>
 <%
 
- 
-
-AuthenticatedToken token = (AuthenticatedToken)request.getSession().getAttribute(TicketConsts.ticket_session_token_key);
-String authcode = (String)request.getSession().getAttribute(TicketConsts.ticket_session_authenticatecode_key);	
+HttpSession se = request.getSession(false);
+if(se != null)
+{
+AuthenticatedToken token = (AuthenticatedToken)se.getAttribute(TicketConsts.ticket_session_token_key);
+String authcode = (String)se.getAttribute(TicketConsts.ticket_session_authenticatecode_key);	
 String appburl = "http://localhost:92/ticketappB/appbindex.jsp?"+TicketConsts.ticket_authenticatecode_parameter_name+"="+authcode;
 		 %>
 		 <span>
 	<%=token.getSubject()%>登陆成功！</span>
 	<span>
 	<a href="<%=appburl%>" target="_appb"> 单点访问appbindex</a></span>
+	<br/>
+	<span>
+	<a href="appalogout.jsp" target="_appb"> 退出登录</a></span>
+	<%} %>
 		
 
 

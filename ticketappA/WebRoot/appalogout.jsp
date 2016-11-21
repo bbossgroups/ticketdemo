@@ -9,20 +9,13 @@
 <%@page import="java.util.Map"%>
 <%@page import="java.util.HashMap"%>
 <%
-
- 
-HttpSession se = request.getSession(false);
+//构建一个待验证的token
+HttpSession se = request.getSession(false)
 if(se != null)
-{
-AuthenticatedToken token = (AuthenticatedToken)se.getAttribute(TicketConsts.ticket_session_token_key);
-String authcode = (String)se.getAttribute(TicketConsts.ticket_session_authenticatecode_key);	
-
-			 %>
-		 <span>
-	<%=token != null ?token.getSubject():"guest"%>的工作页面！<%=authcode %></span>
-	<span>
+	se.invalidate();
+out.print("退出成功")
+%>
 	
-<%} %>		
 
 
 

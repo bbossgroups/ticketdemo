@@ -2,7 +2,7 @@
 	<!-- 令牌服务配置-->
 	<property name="token.TokenService" class="org.frameworkset.web.token.TokenService"
 		destroy-method="destroy" init-method="afterPropertiesSet">
-			<property name="ticketdualtime" value="10000"/>
+			<property name="ticketdualtime" value="100000"/>
 			<property name="temptokenlivetime" value="3600000"/>			
 			<property name="dualtokenlivetime" value="2592000000"/>
 			<property name="tokenscaninterval" value="1800000"/>

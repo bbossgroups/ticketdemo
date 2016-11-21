@@ -28,6 +28,7 @@ public class TicketClientTest {
 	 @org.junit.Test
 	    public void testServiceticket() throws Exception
 	    {
+		 org.frameworkset.web.auth.AuthenticatedToken s;
 		    String ticket = genTicket();
 		    System.out.println(ticket);
 	    	TokenCheckResponse response = checkTicket(ticket);

@@ -1,6 +1,6 @@
+<%@page import="org.frameworkset.web.auth.AuthenticatedToken"%>
 <%@page import="org.frameworkset.web.auth.AuthenticateException"%>
 <%@page import="org.frameworkset.web.auth.AuthenticateMessages"%>
-<%@page import="org.frameworkset.web.auth.AuthenticatedToken"%>
 <%@page import="org.frameworkset.web.auth.AuthorHelper"%>
 <%@page session="false" contentType="text/html; charset=UTF-8"%>
 <%@page import="org.frameworkset.web.auth.AuthenticateResponse"%>
@@ -14,10 +14,10 @@ extendAttributes.put("frommobile", true);
 extendAttributes.put("fromremember", true);
 
 String account = "yinbp", password="123456";
-WebAuthenticate auth = new WebAuthenticate(  request,  account,  password, extendAttributes);
+WebAuthenticate auth = new WebAuthenticate(  request, response, account,  password, extendAttributes);
 AuthenticateResponse ar = auth.ssologin();
 String appburl = "http://localhost:92/ticketappB/appb.jsp";
-String outstr = "";
+String outstr = "";  
 if(ar.isValidateResult())
 {
 	try
@@ -58,7 +58,7 @@ extendAttributes.put("frommobile", true);
 extendAttributes.put("fromremember", true);
 
   account = "zhangsan";password="123456";
-auth = new WebAuthenticate(  request,  account,  password, extendAttributes);
+auth = new WebAuthenticate(  request, response, account,  password, extendAttributes);
 ar = auth.ssologin();
 
 if(ar.isValidateResult())
@@ -91,7 +91,7 @@ extendAttributes.put("frommobile", true);
 extendAttributes.put("fromremember", true);
 
   account = "lisi";password="www";
-auth = new WebAuthenticate(  request,  account,  password, extendAttributes);
+auth = new WebAuthenticate(  request, response, account,  password, extendAttributes);
 ar = auth.ssologin();
 
 if(ar.isValidateResult())
@@ -124,7 +124,7 @@ extendAttributes.put("frommobile", true);
 extendAttributes.put("fromremember", true);
 
   account = "zhangsan";password="123456";
-auth = new WebAuthenticate(  request,  account,  password, extendAttributes);
+auth = new WebAuthenticate(  request,response,  account,  password, extendAttributes);
 ar = auth.ssologin();
 String restful = "http://localhost:93/ticketrestful/authdemo/getData.page?authtoken="+ar.getAuthorization()+"&queryId=1";
 

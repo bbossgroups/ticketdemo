@@ -18,6 +18,7 @@ import org.frameworkset.web.auth.AuthenticatedToken;
  */
 public class LoginUtil {
 	private static AuthenticatedToken token ;
+	private static String authenticatecode;
 	private static String error ;
 	/**
 	 * 
@@ -27,7 +28,7 @@ public class LoginUtil {
 	}
 	public static String getAuthenticateCode()
 	{
-		return token.getAuthenticatecode();
+		return authenticatecode;
 	}
 	public static void login(String account,String password)
 	{
@@ -41,7 +42,7 @@ public class LoginUtil {
 	         try {
 				AppAuthenticate appAutheticate = new AppAuthenticate( null, account,  password,  extendAttributes);
 				 token = appAutheticate.login();
-				 
+				 authenticatecode = appAutheticate.getAuthenticatecode();
 			} catch (AuthenticateException e) {
 				error = AuthenticateMessages.getMessage(e.getMessage()); 
 			}

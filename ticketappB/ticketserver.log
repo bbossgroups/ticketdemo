@@ -196,3 +196,27 @@ java.lang.ArrayIndexOutOfBoundsException: 1
 [2016-11-19 12:40:58][DEBUG][org.frameworkset.spi.assemble.ProviderManagerInfo] class org.frameworkset.spi.interceptor.InterceptorFacttoryImpl not found in classpath,use DummyInterceptorFacttory. 
 [2016-11-19 12:40:58][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
 [2016-11-19 12:40:58][DEBUG][org.frameworkset.web.token.TokenService] 加载认证证书[token.certificate]完毕.
+[2016-11-21 14:52:25][DEBUG][org.frameworkset.spi.assemble.ProviderManagerInfo] class org.frameworkset.spi.interceptor.InterceptorFacttoryImpl not found in classpath,use DummyInterceptorFacttory. 
+[2016-11-21 14:52:25][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 14:52:25][DEBUG][org.frameworkset.web.token.TokenService] 加载认证证书[token.certificate]完毕.
+[2016-11-21 17:27:29][DEBUG][org.frameworkset.spi.assemble.ProviderManagerInfo] class org.frameworkset.spi.interceptor.InterceptorFacttoryImpl not found in classpath,use DummyInterceptorFacttory. 
+[2016-11-21 17:27:29][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 17:27:29][DEBUG][org.frameworkset.web.token.TokenService] 加载认证证书[token.certificate]完毕.
+[2016-11-21 17:57:51][DEBUG][org.frameworkset.spi.assemble.ProviderManagerInfo] class org.frameworkset.spi.interceptor.InterceptorFacttoryImpl not found in classpath,use DummyInterceptorFacttory. 
+[2016-11-21 17:57:51][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 17:57:51][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 17:57:51][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 17:57:52][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 17:57:52][DEBUG][org.frameworkset.web.token.TokenService] 加载认证证书[token.certificate]完毕.
+[2016-11-21 18:04:45][DEBUG][org.frameworkset.spi.assemble.ProviderManagerInfo] class org.frameworkset.spi.interceptor.InterceptorFacttoryImpl not found in classpath,use DummyInterceptorFacttory. 
+[2016-11-21 18:04:45][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 18:04:45][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 18:04:45][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 18:05:25][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 18:05:25][DEBUG][org.frameworkset.web.token.TokenService] 加载认证证书[token.certificate]完毕.
+[2016-11-21 18:40:34][DEBUG][org.frameworkset.spi.assemble.ProviderManagerInfo] class org.frameworkset.spi.interceptor.InterceptorFacttoryImpl not found in classpath,use DummyInterceptorFacttory. 
+[2016-11-21 18:40:34][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 18:40:34][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 18:40:34][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 18:40:47][DEBUG][org.frameworkset.spi.BaseApplicationContext] Unable to locate MessageSource with name 'messageSource': using default [org.frameworkset.spi.support.DelegatingMessageSource]
+[2016-11-21 18:40:47][DEBUG][org.frameworkset.web.token.TokenService] 加载认证证书[token.certificate]完毕.

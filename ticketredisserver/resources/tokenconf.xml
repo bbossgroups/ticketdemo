@@ -1,0 +1,31 @@
+<properties>
+	<!-- 令牌服务配置-->
+	<property name="token.TokenService" class="org.frameworkset.web.token.TokenService"
+		destroy-method="destroy" init-method="afterPropertiesSet">
+			<property name="ticketdualtime" value="100000"/>
+			<property name="temptokenlivetime" value="3600000"/>			
+			<property name="dualtokenlivetime" value="2592000000"/>
+			<property name="tokenscaninterval" value="1800000"/>
+			<!-- 			
+			<property name="tokenstore" value="mem"/>
+			<property name="tokenstore" refid="attr:tokenStoreService"/>-->
+			<property name="tokenstore" refid="attr:tokenStoreService"/>
+			
+			<!-- 
+			<property name="tokenstore" value="mongodb|org.frameworkset.web.token.MongodbTokenStore"/>
+			<property name="tokenstore" value="db|org.frameworkset.web.token.DBTokenStore"/>
+			<property name="tokenstore" value="mem|org.frameworkset.web.token.MemTokenStore"/>-->
+			
+			<property name="enableToken" value="true"/>
+<!-- 			<property name="ALGORITHM" value="RSA"/> -->
+			<property name="tokenfailpath" value="/common/jsp/tokenfail.jsp"/>
+			<property name="tokenServerAppName" value="tokenserver"/>
+			<property name="authenticatePlugin" refid="attr:authenticatePlugin"></property>
+		</property>
+	<property name="tokenStoreService" class="org.frameworkset.web.token.RedisTokenStore">
+		<property name="validateApplication" class="org.frameworkset.web.ticketserver.TicketValidateApplication"/>
+	</property>
+	
+	<property name="authenticatePlugin" class="org.frameworkset.web.ticketserver.TicketAuthenticatePlugin"/>
+	
+</properties>

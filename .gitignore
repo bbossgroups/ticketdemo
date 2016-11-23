@@ -53,3 +53,5 @@ Temporary Items
 /.project
 /build.gradle.bak
 /settings.gradle.bak
+
+*.bak

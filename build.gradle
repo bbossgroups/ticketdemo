@@ -93,7 +93,7 @@ configure(subprojects) { subproject ->
 
  
 
-configure([project(":ticketserver"),project(":ticketappA"),project(":ticketappB"),project(":ticketrestful"),project(":session"),project(":sessionmonitor")]) { subproject ->
+configure([project(":ticketserver"),project(":ticketappA"),project(":ticketappB"),project(":ticketrestful")]) { subproject ->
 	apply plugin: 'war'    
 	eclipse {
 		jdt {

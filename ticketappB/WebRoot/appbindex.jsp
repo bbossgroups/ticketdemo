@@ -14,8 +14,8 @@
 HttpSession se = request.getSession(false);
 if(se != null)
 {
-AuthenticatedToken token = (AuthenticatedToken)se.getAttribute(TicketConsts.ticket_session_token_key);//获取用户会话对象，包含所有用户信息
-String authcode = (String)se.getAttribute(TicketConsts.ticket_session_authenticatecode_key);	//获取用户授权码，可用于单点登录功能
+AuthenticatedToken token = (AuthenticatedToken)se.getAttribute(TicketConsts.ticket_session_token_key);
+String authcode = (String)se.getAttribute(TicketConsts.ticket_session_authenticatecode_key);	
 
 		 %>
 		 <span>
@@ -23,8 +23,12 @@ String authcode = (String)se.getAttribute(TicketConsts.ticket_session_authentica
 	<span>
 	
 		<a href="appbwork.jsp" target="_appwork"> 访问appbwork</a></span>
-<%} %>		
-		
+	<%} 	
+else{
+	out.print("没有登录系统");
+	
+}
+	%>
 
 
 

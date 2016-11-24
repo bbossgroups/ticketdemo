@@ -23,8 +23,17 @@ String appburl = "http://localhost:92/ticketappB/appbindex.jsp?"+TicketConsts.ti
 	<a href="<%=appburl%>" target="_appb"> 单点访问appbindex</a></span>
 	<br/>
 	<span>
-	<a href="appalogout.jsp" target="_appb"> 退出登录</a></span>
-	<%} %>
+	<a href="appalogout.jsp" target="_self"> 退出登录</a></span>
+	<%} 
+	
+else{
+	out.print("没有登录系统");
+	%><br/>
+	<span>
+	<a href="appalogin.jsp" target="_self"> 重新登录</a></span>
+	<%
+}
+	%>
 		
 
 

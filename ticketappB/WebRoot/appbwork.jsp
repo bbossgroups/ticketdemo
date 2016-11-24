@@ -22,7 +22,10 @@ String authcode = (String)se.getAttribute(TicketConsts.ticket_session_authentica
 	<%=token != null ?token.getSubject():"guest"%>的工作页面！<%=authcode %></span>
 	<span>
 	
-<%} %>		
-
-
+<%}  	
+else{
+	out.print("没有登录系统");
+	
+}
+	%>
 

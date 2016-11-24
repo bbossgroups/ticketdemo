@@ -15,6 +15,8 @@ if(se != null)
 	se.invalidate();
 out.print("退出成功");
 %>
+<span>
+	<a href="appalogin.jsp" target="_self"> 重新登录</a></span>
 	
 
 

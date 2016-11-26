@@ -1,10 +1,11 @@
 <!-- 令牌服务配置-->
 <property name="token.TokenService" class="org.frameworkset.web.token.TokenService" 
 		destroy-method="destroy" init-method="afterPropertiesSet">	
-		<property name="tokenserver" value="http://localhost:90/ticketserver"/>			
+		<property name="tokenserver" value="http://localhost:99/configserver"/>
+		<!-- <property name="tokenserver" value="http://localhost:90/ticketserver"/> -->			
 		<property name="client" value="true"/>
 		<property name="appid" value="ticketappA"/>
-		<property name="secret" value="52ddd12c-fa15-4e9f-a4f1-7c697520fb50"/>
+		<property name="secret" value="1ed9c510615e49daa1b09e73b7cd2fc8"/>
 		<property name="enableToken" value="true"/>
 		<property name="certificate" value="token.certificate"/>
 				

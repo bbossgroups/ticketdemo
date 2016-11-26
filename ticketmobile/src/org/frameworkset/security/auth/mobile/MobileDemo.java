@@ -25,8 +25,15 @@ public class MobileDemo {
 	public static void main(String args[]) throws Exception
 	{
 		LoginUtil.login("yinbp", "123456");
-		MobileDemo mobileDemo = new MobileDemo();
-		mobileDemo.queryData();
+		if(LoginUtil.getLoginError() != null)
+		{
+			System.out.println(LoginUtil.getLoginError());
+		}
+		else
+		{
+			MobileDemo mobileDemo = new MobileDemo();
+			mobileDemo.queryData();
+		}
 		
 	}
 	public void queryData() throws Exception

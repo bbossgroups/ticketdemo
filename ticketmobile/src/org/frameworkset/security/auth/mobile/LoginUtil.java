@@ -41,8 +41,8 @@ public class LoginUtil {
 	         
 	         try {
 				AppAuthenticate appAutheticate = new AppAuthenticate( null, account,  password,  extendAttributes);
-				 token = appAutheticate.login();
-				 authenticatecode = appAutheticate.getAuthenticatecode();
+				 token = appAutheticate.login();//登录返回用户的会话对象
+				 authenticatecode = appAutheticate.getAuthenticatecode();//token
 			} catch (AuthenticateException e) {
 				error = AuthenticateMessages.getMessage(e.getMessage()); 
 			}

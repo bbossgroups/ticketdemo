@@ -4,7 +4,7 @@
 		<property name="tokenserver" value="http://localhost:99/configserver"/>
 		<!-- <property name="tokenserver" value="http://localhost:90/ticketserver"/> -->			
 		<property name="client" value="true"/>
-		<property name="appid" value="ticketappA"/>
+		<property name="appid" value="test"/>
 		<property name="enableToken" value="true"/>
 		<property name="certificate" value="token.certificate"/>
 				

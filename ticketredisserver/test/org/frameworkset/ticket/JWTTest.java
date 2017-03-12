@@ -1,11 +1,11 @@
 package org.frameworkset.ticket;
 
-import java.security.PrivateKey;
-import java.security.PublicKey;
+import java.security.Key;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.frameworkset.security.KeyCacheUtil;
+import org.frameworkset.security.ecc.SimpleKeyPair;
 import org.frameworkset.web.token.TokenHelper;
 import org.junit.Test;
 
@@ -50,7 +50,8 @@ public class JWTTest {
 	public void testrsa()
 	{
 		String appid = "test";
-		PrivateKey privateKey = TokenHelper.getTokenService().getPrivateKey( appid);
+		SimpleKeyPair  skey = TokenHelper.getTokenService().getServerSimpleKey(appid,"RSA");
+		Key privateKey = skey.getPriKey();
 		Map infos = new HashMap();
 		infos.put("admin", true);
 		String compactJws =  Jwts.builder().setHeaderParam("account", "yinbp").setClaims(infos)
@@ -59,7 +60,7 @@ public class JWTTest {
 			    .signWith(SignatureAlgorithm.RS512, privateKey)
 			    .compact();
 		System.out.println(compactJws);
-		PublicKey publicKey = TokenHelper.getTokenService().getPublicKey( appid);
+		Key publicKey = skey.getPubKey();
 		Jws<Claims> claims = Jwts.parser().setSigningKey(publicKey).parseClaimsJws(compactJws);
 		DefaultJws s;
 		DefaultClaims dd;
@@ -76,7 +77,7 @@ public class JWTTest {
 	public void testrsawithkeytext()
 	{
 		String appid = "test";
-		PrivateKey privateKey = KeyCacheUtil.getPrivateKey(privateKey_);
+		Key privateKey = KeyCacheUtil.getPrivateKey(privateKey_);
 		Map infos = new HashMap();
 		infos.put("admin", true);
 		String compactJws =  Jwts.builder().setHeaderParam("account", "yinbp").setClaims(infos)
@@ -85,7 +86,7 @@ public class JWTTest {
 			    .signWith(SignatureAlgorithm.RS512, privateKey)
 			    .compact();
 		System.out.println(compactJws);
-		PublicKey publicKey = KeyCacheUtil.getPublicKey(publicKey_);
+		Key publicKey = KeyCacheUtil.getPublicKey(publicKey_);
 		Jws<Claims> claims = Jwts.parser().setSigningKey(publicKey).parseClaimsJws(compactJws);
 		System.out.println(claims.getBody().getSubject());
 		System.out.println(claims.getBody().get("admin"));

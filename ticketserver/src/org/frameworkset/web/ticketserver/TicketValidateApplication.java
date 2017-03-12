@@ -7,7 +7,7 @@ import org.frameworkset.web.token.AppValidateResult;
 import org.frameworkset.web.token.Application;
 import org.frameworkset.web.token.BaseValidateApplication;
 import org.frameworkset.web.token.TokenException;
-import org.frameworkset.web.token.TokenHelper;
+import org.frameworkset.web.token.ValidateApplicationException;
 
 /**
  * @author yinbp
@@ -29,16 +29,22 @@ public class TicketValidateApplication extends BaseValidateApplication {
 	@Override
 	public AppValidateResult validateApp(String appid, String secret) throws TokenException {
 		AppValidateResult result = new AppValidateResult();
-		Application app = new Application();
-		app.setAppid(appid);
+		Application app = getApplication(  appid);
 		app.setSecret(secret);
-		app.setSign(true);
-		
-		app.setTicketlivetime(-2);
 		result.setApplication(app);
 		result.setResult(true);
 		 
 		return result;
+	}
+
+	@Override
+	public Application getApplication(String appid) throws ValidateApplicationException {
+		Application app = new Application();
+		app.setAppid(appid);
+//		app.setSecret(secret);
+		app.setSign(true);		
+		app.setTicketlivetime(-2);
+		return app;
 	}
 
 }

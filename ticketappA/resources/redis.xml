@@ -1,14 +1,16 @@
 <properties>
-	<!-- 增加mongodb数据源配置和client工厂类 -->
+	<!-- 增加redis数据源配置 -->
 	<property name="default" class="org.frameworkset.nosql.redis.RedisDB">
 		
-		<!-- 这里不需要配置destroy-method，因为bboss持久层在jvm退出时会自动调用数据源的close方法 -->
-		<property name="nodes">
-			<list componentType="bean"> 
-				<property class="org.frameworkset.nosql.redis.NodeInfo" f:host="127.0.0.1" f:port="6379"/>
-			</list>
+		<!-- redis服务器地址和端口配置，用回车换行符分割多个服务器节点 -->
+		<property name="servers">
+			127.0.0.1:6379
 		</property>
-		<!-- single|cluster|shared -->
+		<!-- 
+		
+		single 单节点模式，单redis服务器模式，nodes列表只需要配置一个redis服务器的地址和端口即可
+		cluster 集群模式，redis集群或者分片集群模式，nodes列表需要配置所有redis服务器的地址和端口（包括主节点和从节点）
+		 -->
 		<property name="mode" value="single" />
 			
 		

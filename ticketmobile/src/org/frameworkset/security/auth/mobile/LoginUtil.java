@@ -40,6 +40,7 @@ public class LoginUtil {
 	        
 	         
 	         try {
+	        	 extendAttributes.put("fromqq",true);
 				AppAuthenticate appAutheticate = new AppAuthenticate( null, account,  password,  extendAttributes);
 				 token = appAutheticate.login();//登录返回用户的会话对象
 				 authenticatecode = appAutheticate.getAuthenticatecode();//token

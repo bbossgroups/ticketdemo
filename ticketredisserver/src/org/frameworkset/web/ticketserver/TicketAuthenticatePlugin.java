@@ -49,15 +49,18 @@ public class TicketAuthenticatePlugin extends BaseAuthenticatePlugin {
 		String[] user = this.getUser(authenticateToken.getAccount());
 		if(user == null)
 			throw new AuthenticateException("用户["+authenticateToken.getAccount()+"]不存在!");
-		
-		if(!user[1].equals(authenticateToken.getPassword()))
-			throw new AuthenticateException("密码不正确!");
+		boolean fromqq = (Boolean)authenticateToken.getAttribute("fromqq");
+		if(!fromqq){
+			if(!user[1].equals(authenticateToken.getPassword()))
+				throw new AuthenticateException("密码不正确!");
+		}
 		ret.setAudience("audience");
 		ret.setCnname(user[2]);
 		ret.setSessionid(authenticateToken.getSessionid());
 		ret.setSubject(authenticateToken.getAccount());
 		ret.setAppcode(authenticateToken.getAppcode());
 		ret.setExtendAttributes(authenticateToken.getExtendAttributes());
+		
 		return ret;
 	}
 

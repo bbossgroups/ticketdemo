@@ -55,3 +55,6 @@ Temporary Items
 /settings.gradle.bak
 
 *.bak
+/.idea/
+/classes/
+/ticketdemo.iml

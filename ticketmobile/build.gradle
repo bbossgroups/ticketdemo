@@ -25,13 +25,11 @@ dependencies {
    compile (
     			[group: 'com.bbossgroups', name: 'bboss-core', version: "${bboss_version}", transitive: true],
                 	
-               [group: 'com.bbossgroups', name: 'bboss-util', version: "${bboss_version}", transitive: false],
                     [group: 'com.bbossgroups', name: 'bboss-hession', version: "${bboss_version}", transitive: true],
           [group: 'com.bbossgroups', name: 'bboss-http', version: "${bboss_version}", transitive: true],
                      
              [group: 'com.bbossgroups.security', name: 'bboss-security-web-inf', version: "${BBOSS_SECURITY_VERSION}", transitive: false],
              [group: 'com.bbossgroups.security', name: 'bboss-ticket', version: "${BBOSS_SECURITY_VERSION}", transitive: false],
-               [group: 'log4j', name: 'log4j', version: '1.2.16', transitive: false],
            
               )
      

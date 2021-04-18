@@ -14,14 +14,14 @@ sourceSets {
 }
 
 dependencies {
-   
 
-   
-    compile  (
+
+
+	api  (
 			
 			[group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: "${jacksonversion}",transitive: false],
             [group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: "${jacksonversion}",transitive: false],
-            [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: "${jacksonversion}",transitive: false],
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: "${jacksondatabaindversion}",transitive: false],
             [group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: "${jacksonversion}",transitive: false],
               [group: 'cglib', name: 'cglib-nodep', version: '3.1', transitive: false],
              [group: 'org.ow2.asm', name: 'asm', version: '5.0.3', transitive: false],
@@ -31,8 +31,8 @@ dependencies {
                [group: 'jstl', name: 'jstl', version: '1.2', transitive: false],
          
     )
-      compile 'io.jsonwebtoken:jjwt:0.7.0'
-   compile (
+	api 'io.jsonwebtoken:jjwt:0.7.0'
+	api (
     			[group: 'com.bbossgroups', name: 'bboss-core', version: "${bboss_version}", transitive: true],
                 	
                [group: 'com.bbossgroups', name: 'bboss-util', version: "${bboss_version}", transitive: false],

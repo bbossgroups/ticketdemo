@@ -9,7 +9,7 @@ configure(allprojects) { project ->
 	apply plugin: "eclipse"
 	apply plugin: "idea"
 	apply plugin: "signing"
-	apply plugin: "maven"
+	apply plugin: "java-library"
 	if(project.getProperty('skipTest'))
 	{
 		compileTestJava.enabled=false
@@ -59,13 +59,13 @@ configure(allprojects) { project ->
 	}
 
 	dependencies {
-		testCompile 'junit:junit:4.12'
+		testImplementation 'junit:junit:4.12'
 	}
 
 	repositories {
 		mavenLocal()
 		 maven {
-	        url "http://maven.aliyun.com/nexus/content/groups/public"
+	        url "https://maven.aliyun.com/nexus/content/groups/public"
 	    }
 		mavenCentral()
 		
@@ -74,19 +74,20 @@ configure(allprojects) { project ->
 
 configure(subprojects) { subproject ->
 	task sourcesJar(type: Jar) {
-		classifier = "sources"
+		archiveClassifier = "sources"
 		from sourceSets.main.allJava
+		duplicatesStrategy = DuplicatesStrategy.INCLUDE
 	}
-
+	processResources {
+		duplicatesStrategy = DuplicatesStrategy.INCLUDE
+	}
 	task javaDocJar(type: Jar, dependsOn: javadoc) {
-		classifier = "javadoc"
+		archiveClassifier = "javadoc"
 		from javadoc.destinationDir
 	}
-
 	artifacts {
-	    archives sourcesJar, javaDocJar
+		archives sourcesJar, javaDocJar
 	}
-
 	 
 }
 		 
@@ -132,8 +133,8 @@ configure([project(":ticketserver"),project(":ticketredisserver"),project(":tick
             [group: 'javax.servlet.jsp', name: 'javax.servlet.jsp-api', version: '2.3.1', transitive: false],
           
     	)
-    	
-    	testCompile(            
+
+		testImplementation(
            
             [group: 'javax.servlet', name: 'javax.servlet-api', version: "3.0.1", transitive: false],
             //[group: 'javax.servlet', name: 'jsp-api', version: '2.0', transitive: false],

@@ -21,8 +21,8 @@ sourceSets {
 }
  
 dependencies {
-    compile 'io.jsonwebtoken:jjwt:0.7.0'
-   compile (
+	api 'io.jsonwebtoken:jjwt:0.7.0'
+	api (
     			[group: 'com.bbossgroups', name: 'bboss-core', version: "${bboss_version}", transitive: true],
                 	
                [group: 'com.bbossgroups', name: 'bboss-util', version: "${bboss_version}", transitive: false],
@@ -31,7 +31,7 @@ dependencies {
         
               
               )
-       compile (       
+	api (
      		[group: 'org.ow2.asm', name: 'asm', version: '5.0.3', transitive: false],
                [group: 'com.bbossgroups.security', name: 'bboss-security-web-inf', version: "${BBOSS_SECURITY_VERSION}", transitive: false],
              [group: 'com.bbossgroups.security', name: 'bboss-ticket', version: "${BBOSS_SECURITY_VERSION}", transitive: false],
@@ -41,7 +41,7 @@ dependencies {
              [group: 'org.apache.commons', name: 'commons-pool2', version: '2.4.2', transitive: false],
                [group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: "${jacksonversion}",transitive: false],
              [group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: "${jacksonversion}",transitive: false],
-             [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: "${jacksonversion}",transitive: false],
+             [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: "${jacksondatabaindversion}",transitive: false],
              [group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: "${jacksonversion}",transitive: false],
              [group: 'oro', name: 'oro', version: '2.0.8', transitive: false],
             [group: 'redis.clients', name: 'jedis', version: "${jedisversion}", transitive: false],

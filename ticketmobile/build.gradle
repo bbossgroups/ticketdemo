@@ -21,8 +21,8 @@ sourceSets {
 }
  
 dependencies {
-     compile 'io.jsonwebtoken:jjwt:0.7.0'
-   compile (
+	api 'io.jsonwebtoken:jjwt:0.7.0'
+	api (
     			[group: 'com.bbossgroups', name: 'bboss-core', version: "${bboss_version}", transitive: true],
                 	
                     [group: 'com.bbossgroups', name: 'bboss-hession', version: "${bboss_version}", transitive: true],

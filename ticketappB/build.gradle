@@ -27,7 +27,7 @@ dependencies {
                 	
                [group: 'com.bbossgroups', name: 'bboss-util', version: "${bboss_version}", transitive: false],
                     [group: 'com.bbossgroups', name: 'bboss-hession', version: "${bboss_version}", transitive: true],
-             [group: 'com.bbossgroups', name: 'bboss-data', version: "${bboss_version}", transitive: false],
+             [group: 'com.bbossgroups', name: 'bboss-data', version: "${PROJ_BBOSS_DATA_VERSION}", transitive: false],
         
               
               )

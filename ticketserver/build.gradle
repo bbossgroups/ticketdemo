@@ -25,7 +25,7 @@ dependencies {
 	api (
   
              [group: 'org.ow2.asm', name: 'asm', version: '5.0.3', transitive: false],
-           [group: 'com.bbossgroups', name: 'bboss-data', version: "${PROJ_BBOSS_DATA_VERSION}", transitive: false],
+           [group: 'com.bbossgroups', name: 'bboss-data', version: "${PROJ_BBOSS_DATA_VERSION}", transitive: true],
             [group: 'com.bbossgroups', name: 'bboss-core', version: "${bboss_version}", transitive: false],
              [group: 'com.bbossgroups', name: 'bboss-mvc', version: "${bboss_version}", transitive: false],
              [group: 'com.bbossgroups', name: 'bboss-persistent', version: "${bboss_version}", transitive: true],
@@ -47,10 +47,8 @@ dependencies {
              [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: "${jacksondatabaindversion}",transitive: false],
              [group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: "${jacksonversion}",transitive: false],
              [group: 'oro', name: 'oro', version: '2.0.8', transitive: false],
-             [group: 'redis.clients', name: 'jedis', version: "${jedisversion}", transitive: false],
              [group: 'jstl', name: 'jstl', version: '1.2', transitive: false],
              [group: 'mysql', name: 'mysql-connector-java', version: '8.0.28', transitive: false],
-            [group: 'org.mongodb', name: 'mongo-java-driver', version: "${mongodbversion}", transitive: false],
     )
     
      

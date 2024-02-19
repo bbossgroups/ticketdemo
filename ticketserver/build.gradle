@@ -23,8 +23,12 @@ dependencies {
 
 	api 'io.jsonwebtoken:jjwt:0.7.0'
 	api (
-  
-             [group: 'org.ow2.asm', name: 'asm', version: '5.0.3', transitive: false],
+
+            [group: 'org.ow2.asm', name: 'asm', version: '9.6', transitive: false],
+            [group: 'org.ow2.asm', name: 'asm-util', version: '9.6', transitive: false],
+            [group: 'org.ow2.asm', name: 'asm-analysis', version: '9.6', transitive: false],
+            [group: 'org.ow2.asm', name: 'asm-tree', version: '9.6', transitive: false],
+            [group: 'org.ow2.asm', name: 'asm-commons', version: '9.6', transitive: false],
            [group: 'com.bbossgroups', name: 'bboss-data', version: "${PROJ_BBOSS_DATA_VERSION}", transitive: true],
             [group: 'com.bbossgroups', name: 'bboss-core', version: "${bboss_version}", transitive: false],
              [group: 'com.bbossgroups', name: 'bboss-mvc', version: "${bboss_version}", transitive: false],
@@ -38,9 +42,9 @@ dependencies {
              [group: 'com.bbossgroups.security', name: 'bboss-ticket', version: "${BBOSS_SECURITY_VERSION}", transitive: false],
               [group: 'com.bbossgroups', name: 'bboss-soa', version: "${bboss_version}", transitive: false],
              [group: 'com.bbossgroups', name: 'bboss-velocity', version: "${bboss_version}", transitive: false],
-             [group: 'cglib', name: 'cglib-nodep', version: '3.1', transitive: false],
-              [group: 'commons-collections', name: 'commons-collections', version: '3.2.1', transitive: false],
-            [group: 'org.apache.commons', name: 'commons-pool2', version: '2.4.2', transitive: false],
+             [group: 'cglib', name: 'cglib-nodep', version: '3.3.0', transitive: false],
+              [group: 'commons-collections', name: 'commons-collections', version: '3.2.2', transitive: false],
+            [group: 'org.apache.commons', name: 'commons-pool2', version: '2.12.0', transitive: false],
                [group: 'commons-lang', name: 'commons-lang', version: '2.6', transitive: false],
              [group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: "${jacksonversion}",transitive: false],
              [group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: "${jacksonversion}",transitive: false],
@@ -48,7 +52,7 @@ dependencies {
              [group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: "${jacksonversion}",transitive: false],
              [group: 'oro', name: 'oro', version: '2.0.8', transitive: false],
              [group: 'jstl', name: 'jstl', version: '1.2', transitive: false],
-             [group: 'mysql', name: 'mysql-connector-java', version: '8.0.28', transitive: false],
+             [group: 'mysql', name: 'mysql-connector-java', version: '8.0.33', transitive: false],
     )
     
      

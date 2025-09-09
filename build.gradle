@@ -112,7 +112,9 @@ configure([project(":ticketserver"),project(":ticketredisserver"),project(":tick
 	    //classpath configurations.compile // adds a configuration to the WEB-INF/lib dir.
 	   // webXml = file('WebRoot/WEB-INF/web.xml') // copies a file to WEB-INF/web.xml
 	}*/
-	webAppDirName = 'WebRoot'  
+    war {
+        webAppDirectory = file('WebRoot')
+    }
 	publishing {
 		publications {
 			mavenJava(MavenPublication) {

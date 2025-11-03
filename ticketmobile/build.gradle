@@ -26,7 +26,7 @@ dependencies {
     			[group: 'com.bbossgroups', name: 'bboss-core', version: "${bboss_version}", transitive: true],
                 	
                     [group: 'com.bbossgroups', name: 'bboss-hession', version: "${bboss_version}", transitive: true],
-          [group: 'com.bbossgroups', name: 'bboss-http', version: HTTP_VERSION, transitive: true],
+          [group: 'com.bbossgroups', name: 'bboss-http5', version: HTTP_VERSION, transitive: true],
                      
              [group: 'com.bbossgroups.security', name: 'bboss-security-web-inf', version: "${BBOSS_SECURITY_VERSION}", transitive: false],
              [group: 'com.bbossgroups.security', name: 'bboss-ticket', version: "${BBOSS_SECURITY_VERSION}", transitive: false],

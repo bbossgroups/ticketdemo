@@ -32,16 +32,16 @@ dependencies {
               
               )
 	api (
-            [group: 'org.ow2.asm', name: 'asm', version: '9.6', transitive: false],
-            [group: 'org.ow2.asm', name: 'asm-util', version: '9.6', transitive: false],
-            [group: 'org.ow2.asm', name: 'asm-analysis', version: '9.6', transitive: false],
-            [group: 'org.ow2.asm', name: 'asm-tree', version: '9.6', transitive: false],
-            [group: 'org.ow2.asm', name: 'asm-commons', version: '9.6', transitive: false],
+            [group: 'org.ow2.asm', name: 'asm', version: '9.9.1', transitive: false],
+            [group: 'org.ow2.asm', name: 'asm-util', version: '9.9.1', transitive: false],
+            [group: 'org.ow2.asm', name: 'asm-analysis', version: '9.9.1', transitive: false],
+            [group: 'org.ow2.asm', name: 'asm-tree', version: '9.9.1', transitive: false],
+            [group: 'org.ow2.asm', name: 'asm-commons', version: '9.9.1', transitive: false],
                [group: 'com.bbossgroups.security', name: 'bboss-security-web-inf', version: "${BBOSS_SECURITY_VERSION}", transitive: false],
              [group: 'com.bbossgroups.security', name: 'bboss-ticket', version: "${BBOSS_SECURITY_VERSION}", transitive: false],
            [group: 'com.bbossgroups.security', name: 'bboss-security', version: "${BBOSS_SECURITY_VERSION}", transitive: false],
             [group: 'com.bbossgroups', name: 'bboss-soa', version: "${bboss_version}", transitive: false],
-              [group: 'cglib', name: 'cglib-nodep', version: '3.3.0', transitive: false],
+//              [group: 'cglib', name: 'cglib-nodep', version: '3.3.0', transitive: false],
              [group: 'org.apache.commons', name: 'commons-pool2', version: '2.12.0', transitive: false],
                [group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: "${jacksonversion}",transitive: false],
              [group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: "${jacksonversion}",transitive: false],
